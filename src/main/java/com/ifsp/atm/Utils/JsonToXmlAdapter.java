@@ -10,6 +10,7 @@ public class JsonToXmlAdapter {
         ObjectMapper jsonMapper = new ObjectMapper();
         XmlMapper xmlMapper = new XmlMapper();
 
+        // Melhorando a visualização do JSON
         xmlMapper.enable(SerializationFeature.INDENT_OUTPUT);
         // Converte JSON para árvore JsonNode
         JsonNode jsonNode = jsonMapper.readTree(jsonString);
